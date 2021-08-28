@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="반다이몰 사이트 클론 코딩">
+    <meta name="keywords" content="반다이몰, 디지몬, 건담, 피규어">
+    <title>반다이몰</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" href="favicon/favicon_16.png">
+    <link rel="apple-touch-icon-precomposed" href="favicon/favicon_72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="favicon/favicon_96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/favicon_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="favicon/favicon_192.png">
+
+    <script defer src="javascript/script.js"></script>
+</head>
+<body>
+    <a href="#content" class="skip">본문 바로가기</a>
+    <header>
+        <div class="wrap">
+            <div class="header_top">
+                <ul class="login_top">
+                    <li class="bookmark"><a href="#">즐겨찾기</a></li>
+                    <li class="mobile"><a href="#">모바일앱</a></li>
+                </ul>
+                <ul class="user_info">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li> 
+                    <li><a href="#">주문배송조회</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="header_mid">
+                <div class="logo"><a href="#"><img src="img/top_logo.png" alt="반다이몰"></a></div>
+                <div class="search">
+                    <div class="search_all">
+                        <a href="#none" class="search_division">통합검색</a>
+                        <ul class="search_list">
+                            <li><a href="#none">통합검색</a></li>
+                            <li><a href="#none">반다이 토이</a></li>
+                            <li><a href="#none">건담베이스 온라인</a></li>
+                            <li><a href="#none">반다이 예약</a></li>
+                        </ul>
+                        <div>
+                            <input class="searchbar" type="text" placeholder="검색어를 입력해주세요.">
+                            <a class="ir_so" href="#">검색</a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="search_word">통합추천검색어</li>
+                        <li><a href="#">건담</a></li>
+                        <li><a href="#">원피스</a></li>
+                        <li><a href="#">파워레인저</a></li>
+                        <li><a href="#">코코밍</a></li>
+                        <li><a href="#">요괴워치</a></li>
+                    </ul>
+                </div>
+                <div class="sns">
+                    <img src="img/facebook.jpg" alt="반다이몰 페이스북">
+                </div>
+                <a href="#none" class="m_category"><span class="ir_so">통합 카테고리</span></a>
+            </div>
+        </div>
+        <div class="header_btm">
+            <div class="wrap">
+                <nav>  
+                    <ul class="gnb">
+                        <li><a href="#"><img src="img/gnb_off01.png" alt="반다이 토이"></a></li>
+                        <li><a href="#"><img src="img/gnb_off02.png" alt="건담베이스 온라인"></a></li>
+                        <li><a href="#"><img src="img/gnb_off03.png" alt="반다이 예약"></a></li>
+                        <li><a href="#"><img src="img/gnb_off04.png" alt="타마시이 네이션즈 한정제품"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- //헤더 -->
+
+    <main>
+        <section class="banner">
+            <div class="wrap">
+                <article class="member_coupon">
+                    <div class="member">
+                        <a href="#none" class="toydesc"><img src="img/member_1.gif" alt="완구 설명서"></a>
+                        <a href="#none" class="member_card"><img src="img/member_2.gif" alt="회원 카드등록"></a>
+                        <a href="#none" class="member_rank"><img src="img/member_3.gif" alt="회원 등급혜택"></a>
+                    </div>
+                    <div class="coupon">
+                        <a href="#none" class="couponimg"><img src="img/rt_coupon_bg.png" alt="쿠폰"></a>
+                        <div class="product">
+                            <a href="#none">장바구니<span>0</span></a>
+                            <a href="#none">찜한상품<span>0</span></a>
+                            <div>
+                                <strong>최근 본 상품</strong>
+                                <div><a href="#none"><img src="img/noimage_100px.jpg" alt="이미지 없음"></a></div>
+                                <div><a href="#none"><img src="img/noimage_100px.jpg" alt="이미지 없음"></a></div>
+                            </div>
+                        </div>
+                        <a href="#none" class="gotop"><img src="img/btn_top.gif" alt="위로 올리기"></a>
+                    </div>
+                </article>
+                <article class="allcategory">
+                    <a href="#none" class="category"><span>통합 카테고리</span></a>
+                    <ul class="categorynav">
+                        <li><a class="icon" href="#">반다이토이</a>
+                            <ul class="sub_1">
+                                <li><a class="icon" href="#">남아완구</a>
+                                    <ul class="sub_2">
+                                        <li><a class="icon" href="#">가면라이더 제로원</a></li>
+                                        <li><a class="icon" href="#">엉덩이탐정</a></li>
+                                        <li><a class="icon" href="#">파워레인저 애니멀포스</a></li>
+                                        <li><a class="icon" href="#">가면라이더 세이버</a></li>
+                                        <li><a class="icon" href="#">월드 오브 좀비</a></li>
+                                        <li><a class="icon" href="#">도라에몽</a></li>
+                                        <li><a class="icon" href="#">파워레인저 루팡포스vs패트롤포스</a></li>
+                                        <li><a class="icon" href="#">울트라맨 지드</a></li>
+                                        <li><a class="icon" href="#">가면라이더 지오</a></li>
+                                        <li><a class="icon" href="#">요괴워치</a></li>
+                                        <li><a class="icon" href="#">해체퍼즐</a></li>
+                                        <li><a class="icon" href="#">울트라맨 루브</a></li>
+                                        <li><a class="icon" href="#">파워레인저 다이노소울</a></li>
+                                        <li><a class="icon" href="#">케이블바이트</a></li>
+                                        <li><a class="icon" href="#">캡슐토이</a></li>
+                                        <li><a class="icon" href="#">어플몬스터</a></li>
+                                        <li><a class="icon" href="#">가면라이더 빌드</a></li>
+                                        <li><a class="icon" href="#">파워레인저 갤럭시포스</a></li>
+                                        <li><a class="icon" href="#">벅스닌</a></li>
+                                        <li><a class="icon" href="#">가면라이더 이그제이드</a></li>
+                                        <li><a class="icon" href="#">오델로</a></li>
+                                        <li><a class="icon" href="#">울트라맨 오브</a></li>
+                                        <li><a class="icon" href="#">신비아파트</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="icon" href="#">여아완구</a>
+                                    <ul class="sub_2">
+                                        <li><a class="icon" href="#">캡슐토이</a></li>
+                                        <li><a class="icon" href="#">플로키돌</a></li>
+                                        <li><a class="icon" href="#">믹스워치</a></li>
+                                        <li><a class="icon" href="#">다마고치</a></li>
+                                        <li><a class="icon" href="#">쿠너츠</a></li>
+                                        <li><a class="icon" href="#">열려라! 코코밍</a></li>
+                                        <li><a class="icon" href="#">깜짝에그 시리즈</a></li>
+                                        <li><a class="icon" href="#">걸즈하비</a></li>
+                                        <li><a class="icon" href="#">에그엔젤 코코밍</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="icon" href="#">건담베이스 온라인</a>
+                            <ul class="sub_1">
+                                <li><a class="icon" href="#">프라모델</a>
+                                    <ul class="sub_2">
+                                        <li><a class="icon" href="#">건담프라모델</a></li>
+                                        <li><a class="icon" href="#">애니프라모델</a></li>
+                                        <li><a class="icon" href="#">옵션파츠,공구,서적</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="icon" href="#">완성품</a>
+                                    <ul class="sub_2">
+                                        <li><a class="icon" href="#">타마시이 네이션즈</a></li>
+                                        <li><a class="icon" href="#">반프레스토</a></li>
+                                        <li><a class="icon" href="#">메가하우스</a></li>
+                                        <li><a class="icon" href="#">건담 플렉스</a></li>
+                                        <li><a class="icon" href="#">캔디토이</a></li>
+                                        <li><a class="icon" href="#">캡슐토이</a></li>
+                                        <li><a class="icon" href="#">다마고치</a></li>
+                                        <li><a class="icon" href="#">기타상품</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="icon" href="#">부품A/S</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="icon" href="#">반다이예약</a>
+                            <ul class="sub_1">
+                                <li><a class="icon" href="#">반다이 하비 온라인샵</a>
+                                    <ul class="sub_2">
+                                        <li><a class="icon" href="#">클럽G</a></li>
+                                        <li><a class="icon" href="#">웹한정</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="icon" href="#">타마시이 네이션즈</a>
+                                    <ul class="sub_2">
+                                        <li><a class="icon" href="#">초합금</a></li>
+                                        <li><a class="icon" href="#">DX초합금</a></li>
+                                        <li><a class="icon" href="#">슈퍼로봇 초합금</a></li>
+                                        <li><a class="icon" href="#">초합금혼</a></li>
+                                        <li><a class="icon" href="#">DX초합금혼</a></li>
+                                        <li><a class="icon" href="#">초합금 카타마리</a></li>
+                                        <li><a class="icon" href="#">메탈빌드</a></li>
+                                        <li><a class="icon" href="#">어른의 초합금</a></li>
+                                        <li><a class="icon" href="#">SH 피규아트</a></li>
+                                        <li><a class="icon" href="#">SH 피규아트 제로</a></li>
+                                        <li><a class="icon" href="#">ROBOT혼</a></li>
+                                        <li><a class="icon" href="#">메탈로보트혼</a></li>
+                                        <li><a class="icon" href="#">넥스엣지스타일</a></li>
+                                        <li><a class="icon" href="#">타마시이 버디즈</a></li>
+                                        <li><a class="icon" href="#">명장 MOVE REAUZATION</a></li>
+                                        <li><a class="icon" href="#">세인트세이야</a></li>
+                                        <li><a class="icon" href="#">혼STAGE</a></li>
+                                        <li><a class="icon" href="#">혼 EFFECT 시리즈</a></li>
+                                        <li><a class="icon" href="#">아마걸즈프로젝트(AGP)</a></li>
+                                        <li><a class="icon" href="#">GUNDAM FIX FIGURATION</a></li>
+                                        <li><a class="icon" href="#">GUNDAM FIX FIGURATION METAL</a></li>
+                                        <li><a class="icon" href="#">COMPOSITION</a></li>
+                                        <li><a class="icon" href="#">S.I.C</a></li>
+                                        <li><a class="icon" href="#">울트라 엑트</a></li>
+                                        <li><a class="icon" href="#">SDX</a></li>
+                                        <li><a class="icon" href="#">혼SPEC</a></li>
+                                        <li><a class="icon" href="#">초조형혼</a></li>
+                                        <li><a class="icon" href="#">치비아트</a></li>
+                                        <li><a class="icon" href="#">타마시이 Lab</a></li>
+                                        <li><a class="icon" href="#">혼 OPTION</a></li>
+                                        <li><a class="icon" href="#">PTOPLICA</a></li>
+                                        <li><a class="icon" href="#">SH몬스터아츠</a></li>
+                                        <li><a class="icon" href="#">기타</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="icon" href="#">하비예약</a>
+                                    <ul class="sub_2">
+                                        <li><a class="icon" href="#">프라모델</a></li>
+                                        <li><a class="icon" href="#">완성품</a></li>
+                                        <li><a class="icon" href="#">피규어</a></li>
+                                        <li><a class="icon" href="#">기타</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="icon" href="#">반다이 완구예약</a>
+                                    <ul class="sub_2">
+                                        <li><a class="icon" href="#">웹한정</a></li>
+                                        <li><a class="icon" href="#">일반예약</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="icon" href="#">타마시이 네이션즈 한정제품</a></li>
+                    </ul>
+                </article>
+                <article class="slide_continer">
+                    <ul class="slider">
+                        <li class="slide"><a href="#none"><img src="img/slide01.jpg" alt="가면라이더 디케이드 컴플리트 폼21"></a></li>
+                        <li class="slide"><a href="#none"><img src="img/slide02.jpg" alt="SD 건담 월드 삼국창걸전 기획전 3월 19일 ~ 4월 11일"></a></li>
+                        <li class="slide"><a href="#none"><img src="img/slide03.jpg" alt="가면라이더 제로원"></a></li>
+                    </ul>
+                    <button class="prevbtn"></button>
+                    <button class="nextbtn"></button>
+                </article>
+                <article class="imglist">
+                    <ul>
+                        <li><a href="#none"><img src="img/imglist_1.jpg" alt="파워레인저 애니멀포스"></a></li>
+                        <li><a href="#none"><img src="img/imglist_2.jpg" alt="GUNPLA"></a></li>
+                        <li><a href="#none"><img src="img/imglist_3.jpg" alt="DRAGONBALL Z"></a></li>
+                        <li><a href="#none"><img src="img/imglist_4.jpg" alt="ONEPIECE"></a></li>
+                        <li><a href="#none"><img src="img/imglist_5.jpg" alt="KAKAO FRIENDS"></a></li>
+                        <li><a href="#none"><img src="img/imglist_6.jpg" alt="귀멸의 칼날"></a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <!-- //banner -->
+
+        <section class="mallbest">
+            <div class="wrap">
+                <h2 class="ir_pm">MALL BEST</h2>
+                <ul class="mall_tab">
+                    <li class="mall_tab_on"><a href="#none">모아보기</a></li>
+                    <li><a href="#none">반다이 토이</a></li>
+                    <li><a href="#none">건담베이스 온라인</a></li>
+                    <li><a href="#none">반다이 예약</a></li>
+                </ul>
+                <div class="mall_container">
+                    <div class="mall_content">
+                        <ul class="mall_list">
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017415_m.jpg" alt="동물합체 라이드킹"></div>
+                                    <em>3세 이상</em>
+                                    <p>[파워레인저 애니멀 포스] DX 라이드킹</p>
+                                    <strong>72,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017435_m.jpg" alt="큐브기린&큐브베어"></div>
+                                    <em>3세 이상</em>
+                                    <p>[파워레인저 애니멀 포스]큐브 기린&큐브 베어</p>
+                                    <strong>18,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/019939_m.jpg" alt="죠르디 다마고치 실리콘 케이스"></div>
+                                    <em>6세 이상</em>
+                                    <p>죠르디 다마고치 실리콘 케이스</p>
+                                    <strong>14,900<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/019692_m.jpg" alt="[MG]윙 건담 제로(EW) Ver.Ka"></div>
+                                    <em>15세 이상</em>
+                                    <p>[MG]윙 건담 제로(EW) Ver.Ka</p>
+                                    <strong>66,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/016522_m.jpg" alt="[RG]에반게리온 초호기"></div>
+                                    <em>15세 이상</em>
+                                    <p>[RG]에반게리온 초호기</p>
+                                    <strong>54,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/016657_m.jpg" alt="로보트혼 에반게리온 영호기/영호기(카이) 신극장판"></div>
+                                    <em>15세 이상</em>
+                                    <p>로보트혼 에반게리온 영호기/영호기(카이) 신극장판</p>
+                                    <strong>78,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mall_list">
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017415_m.jpg" alt="동물합체 라이드킹"></div>
+                                    <em>3세 이상</em>
+                                    <p>[파워레인저 애니멀 포스] DX 라이드킹</p>
+                                    <strong>72,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017416_m.jpg" alt="[파워레인저 애니멀포스] DX 오션엠페러"></div>
+                                    <em>3세 이상</em>
+                                    <p>[파워레인저 애니멀포스] DX 오션엠페러</p>
+                                    <strong>75,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017436_m.jpg" alt="[파워레인저 애니멀포스] 큐브 모울&큐브 배트"></div>
+                                    <em>3세 이상</em>
+                                    <p>[파워레인저 애니멀포스] 큐브 모울&큐브 배트</p>
+                                    <strong>18,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017435_m.jpg" alt="큐브기린&큐브베어"></div>
+                                    <em>3세 이상</em>
+                                    <p>[파워레인저 애니멀 포스]큐브 기린&큐브 베어</p>
+                                    <strong>18,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/019304_m.jpg" alt="[가면라이더 제로원] DX 제로원 드라이버"></div>
+                                    <em>3세 이상</em>
+                                    <p>[가면라이더 제로원] DX 제로원 드라이버</p>
+                                    <strong>64,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/019939_m.jpg" alt="죠르디 다마고치 실리콘 케이스"></div>
+                                    <em>6세 이상</em>
+                                    <p>죠르디 다마고치 실리콘 케이스</p>
+                                    <strong>14,900<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mall_list">
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/019692_m.jpg" alt="[MG]윙 건담 제로(EW) Ver.Ka"></div>
+                                    <em>15세 이상</em>
+                                    <p>[MG]윙 건담 제로(EW) Ver.Ka</p>
+                                    <strong>66,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017668_m.jpg" alt="[RG]에반게리온 2호기"></div>
+                                    <em>15세 이상</em>
+                                    <p>[RG]에반게리온 2호기</p>
+                                    <strong>54,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017675_m.jpg" alt="엔트리 그레이드 건담"></div>
+                                    <em>8세 이상</em>
+                                    <p>엔트리 그레이드 건담</p>
+                                    <strong>8,400<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/015659_m.jpg" alt="[RG] 뉴 건담"></div>
+                                    <em>15세 이상</em>
+                                    <p>[RG] 뉴 건담</p>
+                                    <strong>50,400<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/017491_m.jpg" alt="귀멸의 칼날 피규어 Vol.4(하시비라 이노스케)"></div>
+                                    <em>15세 이상</em>
+                                    <p>귀멸의 칼날 피규어 Vol.4(하시비라 이노스케)</p>
+                                    <strong>22,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/016895_m.jpg" alt="귀멸의 칼날 Q 포스켓 카마도 네즈코 Ver.A"></div>
+                                    <em>15세 이상</em>
+                                    <p>귀멸의 칼날 Q 포스켓 카마도 네즈코 Ver.A</p>
+                                    <strong>22,000<span>원</span></strong>
+                                    <span>적립</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mall_list">
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/021025_m.jpg" alt="[예약] 드래곤볼 슈퍼 BWFC 조형 천하제일 무술대회3"></div>
+                                    <em>15세 이상</em>
+                                    <p>[예약] 드래곤볼 슈퍼 BWFC 조형 천하제일 무술대회3000</p>
+                                    <strong>42,000<span>원</span></strong>
+                                    <span>예약</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/020908_m.jpg" alt="[예약] 피규어라이즈 스탠다드 AMPLFIED 메탈가루몬 흑"></div>
+                                    <em>15세 이상</em>
+                                    <p>[예약] 피규어라이즈 스탠다드 AMPLFIED 메탈가루몬 흑</p>
+                                    <strong>54,000<span>원</span></strong>
+                                    <span>예약</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/020449_m.jpg" alt="[예약] S.H.피규어아트 슈퍼사이어인 풀파워 손오공"></div>
+                                    <em>15세 이상</em>
+                                    <p>[예약] S.H.피규어아트 슈퍼사이어인 풀파워 손오공</p>
+                                    <strong>42,000<span>원</span></strong>
+                                    <span>예약</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/021131_m.jpg" alt="[타마시이 한정판] 로보트혼 에반게리온 신2호기 알파"></div>
+                                    <em>15세 이상</em>
+                                    <p>[타마시이 한정판] 로보트혼 에반게리온 신2호기 알파</p>
+                                    <strong>120,000<span>원</span></strong>
+                                    <span>예약</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/020563_m.jpg" alt="[예약] 피규어라이즈 스탠다드 AMPLFIED 듀크몬"></div>
+                                    <em>15세 이상</em>
+                                    <p>[예약] 피규어라이즈 스탠다드 AMPLFIED 듀크몬</p>
+                                    <strong>54,000<span>원</span></strong>
+                                    <span>예약</span>
+                                </a>
+                            </li>
+                            <li class="box">
+                                <a href="#none">
+                                    <div><img src="img/020936_m.jpg" alt="[예약] NXEDGE 크시 건담"></div>
+                                    <em>15세 이상</em>
+                                    <p>[예약] NXEDGE 크시 건담</p>
+                                    <strong>67,200<span>원</span></strong>
+                                    <span>예약</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //mall best -->
+
+        <section class="new">
+            <div class="wrap">
+                <h2 class="ir_pm">NEW ARRIVALS</h2>
+                <ul class="new_arrivals">
+                    <li class="box">
+                        <a href="#none">
+                            <div class="g">
+                                <img src="img/020611_m.jpg" alt="극장판 세일러 문 ETERNAL Q 포스켈 슈퍼 세일러_">
+                            </div>
+                            <em>15세 이상</em>
+                            <p>극장판 세일러 문 ETERNAL Q 포스켈 슈퍼 세일러_</p>
+                            <strong>22,000<span>원</span></strong>
+                            <span>적립</span>
+                        </a>
+                        <div class="plusinfo">
+                            <a class="btn_keep" href="#none"></a>
+                            <a class="btn_cart" href="#none"></a>
+                            <a class="btn_sch" href="#none"></a>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a href="#none">
+                            <div class="g"><img src="img/020613_m.jpg" alt="극장판 세일러 문 ETERNAL Q 포스켈 슈퍼 세일러_"></div>
+                            <em>15세 이상</em>
+                            <p>극장판 세일러 문 ETERNAL Q 포스켈 슈퍼 세일러_</p>
+                            <strong>22,000<span>원</span></strong>
+                            <span>적립</span>
+                        </a>
+                        <div class="plusinfo">
+                            <a class="btn_keep" href="#none"></a>
+                            <a class="btn_cart" href="#none"></a>
+                            <a class="btn_sch" href="#none"></a>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a href="#none">
+                            <div class="g"><img src="img/020621_m.jpg" alt="귀멸의 칼날 VIBRATION STARS 카마도 탄지로_"></div>
+                            <em>15세 이상</em>
+                            <p>귀멸의 칼날 VIBRATION STARS 카마도 탄지로_</p>
+                            <strong>22,000<span>원</span></strong>
+                            <span>적립</span>
+                        </a>
+                        <div class="plusinfo">
+                            <a class="btn_keep" href="#none"></a>
+                            <a class="btn_cart" href="#none"></a>
+                            <a class="btn_sch" href="#none"></a>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a href="#none">
+                            <div class="p"><img src="img/020960_m.jpg" alt="[예약] 귀멸의 칼날 Q 포스켓 코쵸우 시노부 VER.A"></div>
+                            <em>15세 이상</em>
+                            <p>[예약] 귀멸의 칼날 Q 포스켓 코쵸우 시노부 VER.A</p>
+                            <strong>22,000<span>원</span></strong>
+                            <span>예약</span>
+                        </a>
+                        <div class="plusinfo">
+                            <a class="btn_keep" href="#none"></a>
+                            <a class="btn_cart" href="#none"></a>
+                            <a class="btn_sch" href="#none"></a>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a href="#none">
+                            <div class="t"><img src="img/020233_m.jpg" alt="에바치2 마리 모델"></div>
+                            <em>6세 이상</em>
+                            <p>에바치2 마리 모델</p>
+                            <strong>29,800<span>원</span></strong>
+                            <span>적립</span>
+                        </a>
+                        <div class="plusinfo">
+                            <a class="btn_keep" href="#none"></a>
+                            <a class="btn_cart" href="#none"></a>
+                            <a class="btn_sch" href="#none"></a>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a href="#none">
+                            <div class="t"><img src="img/019939_m.jpg" alt="죠르디 다마고치 실리콘 케이스"></div>
+                            <em>6세 이상</em>
+                            <p>죠르디 다마고치 실리콘 케이스</p>
+                            <strong>14,900<span>원</span></strong>
+                            <span>적립</span>
+                        </a>
+                        <div class="plusinfo">
+                            <a class="btn_keep" href="#none"></a>
+                            <a class="btn_cart" href="#none"></a>
+                            <a class="btn_sch" href="#none"></a>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a href="#none">
+                            <div class="g"><img src="img/019796_m.jpg" alt="[포켓프라] 콜렉션 QUICK!! 03 피카츄 (배틀포즈)"></div>
+                            <em>8세 이상</em>
+                            <p>[포켓프라] 콜렉션 QUICK!! 03 피카츄 (배틀포즈)</p>
+                            <strong>7,800<span>원</span></strong>
+                            <span>적립</span>
+                        </a>
+                        <div class="plusinfo">
+                            <a class="btn_keep" href="#none"></a>
+                            <a class="btn_cart" href="#none"></a>
+                            <a class="btn_sch" href="#none"></a>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a href="#none">
+                            <div class="g"><img src="img/019797_m.jpg" alt="[포켓프라] 콜렉션 QUICK!! 04 이브이"></div>
+                            <em>8세 이상</em>
+                            <p>[포켓프라] 콜렉션 QUICK!! 04 이브이</p>
+                            <strong>7,800<span>원</span></strong>
+                            <span>적립</span>
+                        </a>
+                        <div class="plusinfo">
+                            <a class="btn_keep" href="#none"></a>
+                            <a class="btn_cart" href="#none"></a>
+                            <a class="btn_sch" href="#none"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //new -->
+        
+        <section class="md">
+            <div class="wrap">
+                <div class="youtube_link">
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/UejvKYDwUTc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="#none" class="btn_sell"><span class="ir_so">구매하기</span></a>
+                </div>
+                <div class="md_box">
+                    <a href="#none" class="md_box01"><img src="img/1000110.jpg" alt="반다이 하비 온라인샵 ClubG 예약"></a>
+                    <a href="#none" class="md_box01"><img src="img/1000111.jpg" alt="TAMASHI NATIONS 매월 예약 판매 중"></a>
+                </div>
+            </div>
+        </section>
+        <!-- //md -->
+
+        <section class="site_guide">
+            <div class="wrap">
+                <div class="family">
+                    <h3>BANDAI MALL</h3>
+                    <ul>
+                        <li><a href="#none">반다이 토이</a></li>
+                        <li><a href="#none">건담베이스 온라인</a></li>
+                        <li><a href="#none">반다이 예약</a></li>
+                        <li><a href="#none">타마시이 네이션즈 한정제품</a></li>
+                    </ul>
+                </div>
+                <div class="intro">
+                    <h3>쇼핑안내</h3>
+                    <ul>
+                        <li><a href="#none">사이트 소개</a></li>
+                        <li><a href="#none">회원등급 안내</a></li>
+                        <li><a href="#none">쿠폰 포인트 안내</a></li>
+                    </ul>
+                </div>
+                <div class="customer">
+                    <h3>고객센터</h3>
+                    <ul>
+                        <li><a href="#none">자주 묻는 질문</a></li>
+                        <li><a href="#none">1:1 문의</a></li>
+                        <li><a href="#none">A/S 안내</a></li>
+                    </ul>
+                </div>
+                <div class="notice">
+                    <h3>공지사항</h3>
+                    <a href="#none"></a>
+                    <ul>
+                        <li><a href="#none">[전체] 가상계좌 결제 서비스 중지 안내(2021년부터 중지)</a></li>
+                        <li><a href="#none">[전체] 네트워크 점검작업으로 인한 순단 예정안내 (11/25)</a></li>
+                        <li><a href="#none">[전체] 이니시스 에스크로 메일/문자 발송 건에 대한 안내</a></li>
+                        <li><a href="#none">[전체] 배송비 기본정책 및 2020년 무료배송 이벤트 안내</a></li>
+                    </ul>
+                </div>
+                <div class="qrcode">
+                    <img src="img/footer_app.png" alt="반다이 모바일앱 QR코드">
+                    <a href="#none"><img src="img/footer_card.png" alt="회원카드"></a>
+                </div>
+            </div>
+        </section>
+        <!-- //site guide -->
+    </main>
+    <!-- //메인 -->
+
+    <footer>
+        <div class="wrap">
+            <div class="footer_top">
+                <div>
+                    <img src="img/footer_crm_num.png" alt="고객센터 1544-4607">
+                    <span>전화문의 : 평일 9:00~18:00 / 점심시간 12:30~13:30 (토,일 및 법정 공휴일 휴무)</span>
+                </div>
+                <ul>
+                    <li><a href="#none" class="footer_facebook"><span class="ir_so">반다이몰 공식 페이스북</span></a></li>
+                    <li><a href="#none" class="footer_youtube"><span class="ir_so">반다이남코코리아 유튜브</span></a></li>
+                </ul>
+            </div>
+            <div class="footer_mid">
+                <ul class="corp_link">
+                    <li><a href="#none">회사소개</a></li>
+                    <li><a href="#none">매장안내</a></li>
+                    <li><a href="#none">사이트 이용약관</a></li>
+                    <li><a href="#none">쇼핑몰 이용약관</a></li>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                </ul>
+                <div class="family_sitelist">
+                    <a href="#none" class="family_sitebtn">Family Site</a>
+                    <ul> 
+                        <li><a href="#none">반다이남코코리아 주식회사</a></li>
+                        <li><a href="#none">건담인포</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_btm">
+                <div class="footer_btm_right">
+                    <div class="footer_logo"><img src="img/footer_logo.png" alt="반다이 몰"></div>
+                    <div class="corp_decs">
+                        <ul>
+                            <li>법인명 : 반다이남코코리아 주식회사 | 주소 : 서울특별시 중구 서소문로 89 순화빌딩 5층</li>
+                            <li>대표이사 : 야마미치 후미아키 | 사업자등록번호 : 106-81-86950 | 통신판매업신고 제2010-서울중구-1720호</li>
+                            <li>고객센터 : 1544-4607 (AS센터 as@bandainamcoasia.com / 반다이몰 : mall@bandainamcoasia.com)</li>
+                            <li>(운영시간 : 09:00~18:00 / 점심시간 : 12:30~13:30 / 주말, 공휴일 휴무)</li>
+                            <li>반다이몰의 모든 콘텐츠는 무단 도용 시 법적인 제재를 받을 수 있습니다.</li>
+                            <li>ⓒBANDAI NAMCO KOREA CO.,LTD. ALL RIGHTS RESERVED.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_inipay"><img src="img/footer_inipay.png" alt="ESCROW INIPAY"></div>
+            </div>
+            <div class="copyright">
+                <a href="#none" class="copyright_btn"><span class="ir_so">Copyright</span></a>
+                <p class="copyright_list">ⓒJAMSTEC ⓒ2009 石森プロ·テレビ朝日·ADK·東映 ⓒ石森プロ·東映 ⓒISHIMORI PRODUCTION INC. and TOEI COMPANY, LTD. ALL Rights Reserved. ⓒ2005 石森プロ·テレビ朝日·ADK·東映 ⓒ2006 石森プロ·テレビ朝日·ADK·東映 ⓒL5/PDS·TX ⓒダイナミック企画・東映アニメーション ⓒHEADGEAR/BANDAI NAMCO VISUAL/TFC ⓒSOTSU·SUNRISE ⓒSOTSU·SUNRISE·MBS ⓒSOTSU·SUNRISE·TV TOKYO ⓒBANDAI NAMCO,WIZ/ TV TOKYO,2010 Team TAMAGOTCHI TV ⓒBANDAI NAMCO,WIZ ⓒDynamic Planning Inc., ⓒ鳥山明/集英社·フジテレビ·東映動画 ⓒDISNEY ⓒSUNRISE·R ⓒ2009 永井豪／ダイナミック企画・くろがね屋 ⓒ2010 石森プロ·テレビ朝日·ADK·東映 ⓒダイナミック企画 ⓒ2001 永井豪/ダイナミック企画・光子力研究所 ⓒSOTSU·SUNRISE ⓒ2014 Fascinations® ⓒ和月伸宏／集英社·フジテレビ·アニプレックス ⓒBANDAI NAMCO ⓒBANDAI NAMCO,WiZ ⓒSUNRISE/VVV Committee, MBS TM&ⓒDC Comics(s15) ⓒ2005 Production I.G·Aniplex·MBS·HAKUHODO ⓒ久保帯人／集英社·テレビ東京·dentsu·ぴえろ ⓒNaoko Takeuchi, PNP, Toei Animation ⓒNaoko Takeuchi ⓒ2012 Lucasfilm Ltd. & TM. All Rights Reserved. Sideshow Collectibles is the registered trademark of Sideshow Inc. ⓒBANDAI NAMCO VISUAL·FlyingDog·GAINAX ⓒGAINAX·中島かずき/アニプレックス·KDE-J·テレビ東京·電通 ⓒSRWOG PROJECT ⓒSHOJI KAWAMORI,SATELIGHT/Project AQUARION EVOL ⓒTohoku Shinsha ⓒ山口貴由（週刊少年チャンピオン） 1994-1996 ⓒちみもりを·AIC ⓒ2010 integrated 501st fighter wing ⓒ2012 NBGI 1997-2012 FromSoftware，Inc. All rights reserved ⓒSUNRISE/BANDAI NAMCO,DENTSU,TV TOKYO ⓒkhara ⓒGAINAX · COLOR ⓒREKI KAWAHARA / ASCII MEDIA WORKS / AW Project ⓒSUNRISE ⓒLYW ⓒL5/YWP·TX ⓒ東北新社 ⓒ2012 Space Battleship Yamato 2199 Production Committee ⓒLeiji Matsumoto·Toei Animation ⓒ小山宙哉/講談社 ⓒEiichiro Oda Shueisha Fuji TV Toei Animation ⓒ2005 BONES/Project EUREKA·MBS ⓒ2009 BONES/Project EUREKA MOVIE ⓒ光プロダクション ⓒSQUARE ENIX / GYROZETTER PROJECET, TV TOKYO ⓒSEGA CHARACTER DESIGN：KATOKI HAJIME ⓒ2004 河森正治·サテライト／Project AQUARION ⓒ東映 ⓒMine Yoshizak/Kadokawashoten, SUNRISE, TV TOKYO, NAS·BV ⓒSUNRISE/PROJECT GEASS·MBS Character Design ⓒ2006-2008 CLAMP ⓒ2010 YUJI SHIOZAKI·WANI BOOKS / IKKITOUSEN XX PARTNERS ⓒSUNRISE/T＆B MOVIES PARTNERS ⓒSUNRISE/T＆B PARTNERS，MBS ⓒTOEI COMPANY, LTD. ALL RIGHTS RESERVED. ⓒXEBEC/FAFNER PROJECT ⓒIndex Corporation 1996，2008 ⓒSEGA/AUTOMUSS/Crypton Future Media，Inc. CHARACTER DESIGN:KATOKI HAJIME ⓒ1997 Nintendo·Creatures·GAME FREAK·TV Tokyo·ShoPro·JR Kikaku. ⓒPokemon ⓒNintendo·Creatures·GAME FREAK·TV Tokyo·ShoPro·JR Kikaku ⓒPokemon ⓒShoji Gato, Shikidouji/Full Metal Panic ! Film Partners ⓒToei Animation. All Rights Reserved. ⓒ2004 テレビ朝日·東映AG·東映 ⓒ2011 石森プロ·テレビ朝日·東映AG·東映 ⓒ1976. 2014 SANRIO CO., LTD. (Appl. No. SK14028) ⓒ田中久仁彦／アスキー・メディアワークス ⓒFujiko Pro ⓒDisney/Pixar ©ID7 ©Disney ©2015 Akiyoshi Hongo, Toei Animation. Licensed by SCG Characters LLC. All Rights Reserved. Used Under Authorization. ©BIRD STUDIO/SHUEISHA,TOEI ANIMATION ©BIRD STUDIO/SHUEISHA, TOEI ANIMATION. License coordinated by FUNimation® Productions, Ltd. All Rights Reserved. Dragonball Z and all logos, character names and distinctive likenesses thereof are trademarks of SHUEISHA, INC. ©Hit-Point ©1997 Nintendo, Creatures, GAME FREAK, TV Tokyo, ShoPro, JR Kikaku. ©Pokémon." ©2016 PROJECT Lovelive! Sunshine!! ©Monkey Punch / TMS • NTV Under license to RTI ©Eiichiro Oda/Shueisha, Toei Animation ©2008 YUKI MIDORIKAWA, HAKUSENSHA/NATSUME YUJIN-CHO PROJECT ©2016 DMM.com POWERCHORD STUDIO / C2 / KADOKAWA All Rights Reserved. ©Naoko Takeuchi / PNP, Toei Animation ©YASUHISA HARA,SHUEISHA/NHK,NEP,PIERROT ©REKI KAWAHARA/PUBLISHED BY KADOKAWA CORPORATION/SAO MOVIE Project ©LUCKY LAND COMMUNICATIONS /SHUEISHA,JOJO’s Animation DU Project ©Monkey Punch/TMS・NTV ©BANDAI/TV TOKYO,COCOTAMA COMMITTEE ©2015 ZAGTOON,METHOD,SAMG,TOEI ANIMATION ©LEVEL-5/YWP</p>
+            </div>
+        </div>
+    </footer>
+    <!-- //푸터 -->
+
+</body>
+</html>
